@@ -1,0 +1,5 @@
+com\qa\StepDefinition\HomePageStepDefenition.class
+com\qa\StepDefinition\ForgotPasswordStepDefenition.class
+com\qa\StepDefinition\LoginStepDefenition.class
+com\qa\TestRunner\TestRunner.class
+com\qa\StepDefinition\GeneratePasswordStepDefenition.class

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="173.457101">
+<testcase classname="ESS Login Functionality" name="ESS Login functionality and JIO Centeral Page Validation" time="84.862978">
+<system-out><![CDATA[Given user is able to login into ESS using valid username as "ankur.jain" and password as "Word03Pass".passed
+Then user validates Tittle and image on Jio Central Page....................passed
+Then user validates Links and elements inside frames of Jio Central Page....passed
+Then Validates frames and Moving window from Jio Central page to Employee Central.passed
+Then Validates Tittle and image on Employee Central Page....................passed
+]]></system-out>
+</testcase>
+<testcase classname="ESS Forgot Password" name="ESS Forgot Pasword functionality verification" time="24.598493">
+<system-out><![CDATA[Given user is on ESS Forgot Password Page...................................passed
+Then user validates Logo and Tittle Forgot Password home page...............passed
+Then user validates second and third tittle of Forgot Password home page....passed
+Then Validates Error Message on entering incorrect userid/pwd on Password page.passed
+Then Validates Error Message on not entering any userid/pwd on forgot Password page.passed
+Then Validates Message on not entering correct userid/pwd on Forgot Password page.passed
+]]></system-out>
+</testcase>
+<testcase classname="ESS Generate Password" name="ESS Generate Pasword functionality verification" time="20.375196">
+<system-out><![CDATA[Given user is on ESS Generate Password Page.................................passed
+Then user validates link & tittle for Generate Password page................passed
+Then user validates Static Text and image on Generate Password Page.........passed
+Then Validates username field & continue button  on Generate Password Page..passed
+Then Validates invalid username and its corresponding error message  on Generate Password Page.passed
+Then Validates error message when no username is entered on Generate Password Page.passed
+]]></system-out>
+</testcase>
+<testcase classname="ESS Home Page" name=": ESS Login Home Page Validation" time="43.620434">
+<system-out><![CDATA[Given user is on ESS Home Page..............................................passed
+Then user validates logo and tittle Page....................................passed
+Then user validates second and third tittle.................................passed
+Then Validates Error Message on entering incorrect "ankur.jain" and "Word09Pass" on Home page.passed
+Then Validates Tool Tip validation for Forgot/Generate Password on Home Page.passed
+]]></system-out>
+</testcase>
+</testsuite>

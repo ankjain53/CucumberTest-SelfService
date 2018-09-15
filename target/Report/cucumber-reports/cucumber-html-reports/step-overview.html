@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Cucumber-ESS-Test</td>
+                          <td>1</td>
+                        <td>22 Aug 2018, 15:26</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">ForgotPasswordStepDefenition.user_is_on_ESS_Forgot_Password_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="507181994">507ms</td>
+                <td class="duration" data-value="507181994">507ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ForgotPasswordStepDefenition.user_validates_Logo_and_Tittle_Forgot_Password_home_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="1084702357">1s 084ms</td>
+                <td class="duration" data-value="1084702357">1s 084ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ForgotPasswordStepDefenition.user_validates_second_and_third_tittle_of_Forgot_Password_home_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="278461673">278ms</td>
+                <td class="duration" data-value="278461673">278ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ForgotPasswordStepDefenition.validates_Error_Message_on_entering_incorrect_userid_pwd_on_Password_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="5004066189">5s 004ms</td>
+                <td class="duration" data-value="5004066189">5s 004ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ForgotPasswordStepDefenition.validates_Error_Message_on_not_entering_any_userid_pwd_on_forgot_Password_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="2131261738">2s 131ms</td>
+                <td class="duration" data-value="2131261738">2s 131ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ForgotPasswordStepDefenition.validates_Message_on_not_entering_correct_userid_pwd_on_Forgot_Password_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="1293620090">1s 293ms</td>
+                <td class="duration" data-value="1293620090">1s 293ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GeneratePasswordStepDefenition.user_is_on_ESS_Generate_Password_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="1435738">001ms</td>
+                <td class="duration" data-value="1435738">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GeneratePasswordStepDefenition.user_validates_Static_Text_and_image_on_Generate_Password_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="3503154085">3s 503ms</td>
+                <td class="duration" data-value="3503154085">3s 503ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GeneratePasswordStepDefenition.user_validates_link_tittle_for_Generate_Password_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="3947271390">3s 947ms</td>
+                <td class="duration" data-value="3947271390">3s 947ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GeneratePasswordStepDefenition.validates_error_message_when_no_username_is_entered_on_Generate_Password_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="1304829994">1s 304ms</td>
+                <td class="duration" data-value="1304829994">1s 304ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GeneratePasswordStepDefenition.validates_invalid_username_and_its_corresponding_error_message_on_Generate_Password_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="1369897533">1s 369ms</td>
+                <td class="duration" data-value="1369897533">1s 369ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GeneratePasswordStepDefenition.validates_username_field_continue_button_on_Generate_Password_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="1790064300">1s 790ms</td>
+                <td class="duration" data-value="1790064300">1s 790ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.Setup()</td>
+                <td>4</td>
+                <td class="duration" data-value="77775688970">1m 17s 775ms</td>
+                <td class="duration" data-value="19443922242">19s 443ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.TearDown()</td>
+                <td>4</td>
+                <td class="duration" data-value="3864730675">3s 864ms</td>
+                <td class="duration" data-value="966182668">966ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.afterScenario(Scenario)</td>
+                <td>4</td>
+                <td class="duration" data-value="603972">000ms</td>
+                <td class="duration" data-value="150993">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.user_is_on_ESS_Home_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="241967">000ms</td>
+                <td class="duration" data-value="241967">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.user_validates_logo_and_tittle_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="13128198863">13s 128ms</td>
+                <td class="duration" data-value="13128198863">13s 128ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.user_validates_second_and_third_tittle()</td>
+                <td>1</td>
+                <td class="duration" data-value="618330651">618ms</td>
+                <td class="duration" data-value="618330651">618ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.validates_Error_Message_on_entering_incorrect_and_on_Home_page(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5244505399">5s 244ms</td>
+                <td class="duration" data-value="5244505399">5s 244ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">HomePageStepDefenition.validates_Tool_Tip_validation_for_Forgot_Generate_Password_on_Home_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="11089252953">11s 089ms</td>
+                <td class="duration" data-value="11089252953">11s 089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStepDefenition.user_is_able_to_login_into_ESS_using_valid_username_as_and_password_as(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="14731785088">14s 731ms</td>
+                <td class="duration" data-value="14731785088">14s 731ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStepDefenition.user_validates_Links_and_elements_inside_frames_of_Jio_Central_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="7747427913">7s 747ms</td>
+                <td class="duration" data-value="7747427913">7s 747ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStepDefenition.user_validates_Tittle_and_image_on_Jio_Central_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="10583648474">10s 583ms</td>
+                <td class="duration" data-value="10583648474">10s 583ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStepDefenition.validates_Tittle_and_image_on_Employee_Central_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="344949352">344ms</td>
+                <td class="duration" data-value="344949352">344ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStepDefenition.validates_frames_and_Moving_window_from_Jio_Central_page_to_Employee_Central()</td>
+                <td>1</td>
+                <td class="duration" data-value="6111788547">6s 111ms</td>
+                <td class="duration" data-value="6111788547">6s 111ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>25</td>
+              <td>34</td>
+              <td class="duration">2m 53s 457ms</td>
+              <td class="duration">5s 101ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
